@@ -8,11 +8,11 @@ COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt 
 
-COPY main.py . 
+COPY app/main.py . 
 
-COPY dash_app_functions.py . 
+COPY app/dash_app_functions.py . 
 
-COPY /assets . 
+COPY app/assets assets 
 
 EXPOSE 8050
 
